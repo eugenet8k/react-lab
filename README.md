@@ -25,6 +25,12 @@ npm install --legacy-peer-deps
 npm start
 ```
 
+### Check Lint
+
+```sh
+npm run lint
+```
+
 #### Test
 
 ```sh

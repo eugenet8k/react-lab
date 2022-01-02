@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import {request} from '../lib/request'
 
 export const readCats = () =>
