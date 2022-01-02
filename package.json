@@ -1,0 +1,70 @@
+{
+  "name": "react-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "author": "Eugene",
+  "scripts": {
+    "chk": "check-dependencies",
+    "start": "npm run chk && rm -rf ./public && NODE_ENV=development webpack serve --config ./webpack.config.dev.js",
+    "lint": "eslint .",
+    "test": "npx jest",
+    "test:watch": "npx jest --maxWorkers=50% --watch",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --watch --runInBand"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "7.15.4",
+    "@emotion/react": "11.4.1",
+    "@emotion/styled": "11.3.0",
+    "core-js": "3.18.1",
+    "lodash": "4.17.20",
+    "react": "18.0.0-rc.0",
+    "react-dom": "18.0.0-rc.0",
+    "react-error-boundary": "3.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.15.4",
+    "@babel/core": "7.15.5",
+    "@babel/preset-env": "7.15.4",
+    "@babel/preset-react": "7.14.5",
+    "@emotion/babel-plugin": "11.3.0",
+    "@emotion/eslint-plugin": "11.2.0",
+    "@emotion/jest": "11.3.0",
+    "@testing-library/jest-dom": "5.16.1",
+    "@testing-library/react": "13.0.0-alpha.5",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.2",
+    "check-dependencies": "1.1.0",
+    "css-loader": "5.2.7",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-babel": "9.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-jest": "24.4.2",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.25.1",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "husky": "7.0.4",
+    "jest": "27.1.0",
+    "jest-environment-jsdom": "27.1.0",
+    "jest-silent-reporter": "0.5.0",
+    "jest-when": "3.3.1",
+    "mini-css-extract-plugin": "2.4.5",
+    "modern-normalize": "1.1.0",
+    "prettier": "2.3.2",
+    "prop-types": "15.8.0",
+    "source-map-loader": "3.0.0",
+    "webpack": "5.65.0",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.6.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
